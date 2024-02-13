@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;400;600 & display=swap');
+
+:root{
+    --cor1: #00B192;
+    --cor2: #673DE6;
+    --cor3: #322073;
+    --cor4: #F4F5FF;
+    --cor5: #201F20;
+    --cor6: #383638a8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+nav > .nav-mid > a:hover{
+    background-color: var(--cor2);
+    color: var(--cor4);
+    
+    border-radius: 18px;
+}
+
+nav > .nav-mid > button:hover{
+    border: 1px solid var(--cor2);
+    border-radius: 12px;
+}
+
+nav > button:hover{
+    background-color: transparent;
+    border: 2px solid var(--cor2);
+
+    color: var(--cor5);
+}
+
+#dropdownlist a:hover{
+    background-color: var(--cor2);
+    border-radius: 12px;
+
+    color: var(--cor4);
+}
+
+
+
+/* Keyframes */
+
+@keyframes slide {
+    0%{
+        transform: translateY(-30px);
+    }100%{
+        transform: translateX(0);
+    }
+}

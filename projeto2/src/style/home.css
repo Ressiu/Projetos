@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --color-1: #d9d9d9;
+  --color-2: #a6a6a6;
+  --color-3: #737373;
+  --color-4: #262626;
+  --color-5: #363636;
+  --color-6: #0d0d0d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  height: 8vh;
+  background: var(--color-4);
+  border: 1.1px solid var(--color-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header h1 {
+  text-transform: uppercase;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.header h1 ion-icon {
+  font-size: 0.8em;
+}
+.header h1:hover {
+  opacity: 0.7;
+}
+.header ol {
+  display: flex;
+  gap: 30px;
+}
+.header a {
+  color: var(--color-1);
+  text-decoration: none;
+  padding: 5px;
+}
+.header ol a:hover {
+  background: var(--color-5);
+  border-radius: 12px;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: var(--color-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.card {
+  width: 450px;
+  height: 550px;
+  background: var(--color-4);
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  gap: 20px;
+
+  animation-name: border;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* CONTENTS */
+
+.card-objetcs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-header {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  text-align: center;
+  padding: 3px;
+  color: var(--color-3);
+  font-weight: 600;
+  cursor: pointer;
+}
+.card-header h1:hover {
+  transform: translateY(-10px);
+
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.texts {
+  padding: 5px 30px;
+  color: var(--color-1);
+  font-size: 1em;
+  cursor: default;
+}
+.texts p {
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.interaction {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 30 px 0px;
+}
+
+.icon-contact {
+  color: var(--color-3);
+}
+
+.icon-contact ion-icon {
+  font-size: 1.6em;
+  margin: 10px 15px;
+  cursor: pointer;
+}
+
+#btn-contato.padrao {
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-1);
+  font-size: 1.2em;
+}
+
+#btn-contato.zap {
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  background: rgb(75, 165, 75);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+#btn-contato.zap:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+#btn-contato.ig {
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  background: #b15eff;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+#btn-contato.ig:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+#btn-contato.github {
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  background: #474747;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+#btn-contato.github:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+#logo-zap:hover {
+  color: rgb(114, 255, 114);
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+#logo-ig:hover {
+  color: #b15eff;
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+#logo-github:hover {
+  transform: scale(1.3);
+  color: #dfdfdf;
+  transition: 0.3s;
+}
+
+@keyframes border {
+  0% {
+    border: 0.5px solid red;
+  }
+  20% {
+    border: 0.6px solid orange;
+  }
+  40% {
+    border: 0.7px solid yellow;
+  }
+  60% {
+    border: 0.8px solid green;
+  }
+  80% {
+    border: 0.9px solid blue;
+  }
+  90% {
+    border: 1px solid violet;
+  }
+  100% {
+    border: 1px solid red;
+  }
+}

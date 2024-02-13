@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-font-light: #f0f1f5;
+  --color-font-dark: #171616;
+
+  --color-background-dark: #171616;
+  --color-background-light: #fefeff;
+
+  --color-detais-background: #292929;
+  --color-details-border: #434343;
+
+  --color-blue: #0d6ede;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-detais-background);
+  padding: 10px;
+}
+
+.base-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-card {
+  width: 25vw;
+  height: 60vh;
+  display: flex;
+  padding: 25px;
+  background: var(--color-background-dark);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 5px solid var(--color-blue);
+  border-radius: 9px;
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.45);
+}
+
+.header-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 25px;
+}
+
+.header-card h2 {
+  color: var(--color-font-light);
+  text-align: center;
+  align-items: center;
+}
+
+.header-card i {
+  color: var(--color-font-light);
+  background: var(--color-detais-background);
+  padding: 5px;
+  border-radius: 9px;
+  border: 1px solid var(--color-details-border);
+}
+
+.labels-card {
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+
+.labels-card input {
+  width: 100%;
+  height: auto;
+  color: var(--color-font-light);
+  padding: 3px;
+  background: transparent;
+  margin: 5px 0px;
+  border: 1px dashed var(--color-details-border);
+  border-radius: 6px;
+  outline: none;
+}
+
+.labels-card input::placeholder {
+  text-align: center;
+  align-items: center;
+  font-size: 8pt;
+}
+
+.labels-card label {
+  width: 100%;
+  height: auto;
+  font-size: 11pt;
+  color: var(--color-font-light);
+  opacity: 0.3;
+}
+
+.btn-card button {
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+  color: var(--color-font-light);
+  margin-top: 35px;
+  padding: 5px;
+  font-size: 9pt;
+  background: var(--color-detais-background);
+  border: 1px solid var(--color-details-border);
+  border-radius: 10px;
+}
+
+.btn-card:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}

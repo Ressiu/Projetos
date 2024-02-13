@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --color-1: #d9d9d9;
+  --color-2: #a6a6a6;
+  --color-3: #737373;
+  --color-4: #262626;
+  --color-5: #363636;
+  --color-6: #0d0d0d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  height: 100vh;
+  background: url("/assets/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 450px;
+  height: 500px;
+  backdrop-filter: blur(10px);
+  border: 4px double var(--color-4);
+  border-radius: 50px 15px 50px 15px;
+}
+.card-header h1 {
+  font-size: 2em;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+  color: var(--color-1);
+  cursor: default;
+}
+
+.card-content {
+  margin: 15px 25px;
+}
+
+.card-content h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: start;
+  margin-bottom: 15px;
+  color: var(--color-1);
+  cursor: default;
+  padding: 5px;
+  max-width: 120px;
+  border-radius: 10px;
+  border: 1px solid var(--color-4);
+  background: #0d0d0d52;
+}
+.card-content h2 ion-icon {
+  font-size: 0.8em;
+}
+.card-content p {
+  padding: 15px;
+  color: var(--color-2);
+  background: rgba(0, 0, 0, 0.09);
+  border-radius: 15px;
+  scrollbar-width: none;
+  cursor: default;
+  border: 1px solid var(--color-4);
+  height: 200px;
+  overflow: auto;
+}
+.card-content p input {
+  cursor: pointer;
+}
+.card-content p label {
+  color: var(--color-1);
+}
+.next {
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#next.active {
+  visibility: visible;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--color-1);
+  font-size: 1.2em;
+  outline: none;
+  cursor: pointer;
+}
+#next:hover {
+  background: #0d0d0d83;
+  transition: 0.5s;
+}

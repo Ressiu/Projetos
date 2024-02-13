@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/style/home.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Ressiu | Exercício pessoal</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>
+          <a href="/src/pages/home.html"
+            >Ressiu <ion-icon name="refresh-outline"></ion-icon
+          ></a>
+        </h1>
+        <ol>
+          <a href="#conteudo">Blog</a>
+          <a href="#conteudo">Shop</a>
+          <a href="#conteudo">Codes</a>
+          <a href="#conteudo">Perfil</a>
+        </ol>
+      </header>
+      <main class="main">
+        <div class="content-section">
+          <div id="conteudo" class="card">
+            <div class="card-objetcs">
+              <header class="card-header">
+                <h1 id="hello" onclick="gift()">
+                  <ion-icon name="gift-outline"></ion-icon>
+                </h1>
+              </header>
+              <section class="card-section">
+                <div class="texts">
+                  <p>
+                    Espero que tenha gostado da pequena interface e interações
+                    integradas dentro desse meu pequeno projeto.
+                  </p>
+                  <p>
+                    Caso queira entrar em contato comigo você pode estar me
+                    encontrando em minhas redes sociais, ou meu número
+                    particular.
+                  </p>
+                  <p>
+                    Para interagir com o botão abaixo, basta você escolher um
+                    dos três ícones adicionados logo abaixo desse parágrafo!
+                  </p>
+                  <div class="interaction">
+                    <div class="icon-contact">
+                      <ion-icon
+                        onclick="zap()"
+                        id="logo-zap"
+                        name="logo-whatsapp"
+                      ></ion-icon>
+                      <ion-icon
+                        onclick="ig()"
+                        id="logo-ig"
+                        name="logo-instagram"
+                      ></ion-icon>
+                      <ion-icon
+                        onclick="github()"
+                        id="logo-github"
+                        name="logo-github"
+                      ></ion-icon>
+                    </div>
+                    <button onclick="link()" class="padrao" id="btn-contato">
+                      <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/src/javascript/interaction.js"></script>
+  </body>
+</html>

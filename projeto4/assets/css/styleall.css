@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;400;600 & display=swap');
+
+:root{
+    --cor1: #00B192;
+    --cor2: #673DE6;
+    --cor3: #322073;
+    --cor4: #F4F5FF;
+    --cor5: #201F20;
+    --cor6: #383638a8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+    cursor: default;
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+h1, h2, h3, p {
+    color: var(--cor5);
+}
+
+nav {
+    height: 8vh;
+    
+    padding: 5px;
+
+    border-bottom: 1px solid var(--cor6);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav img{
+    filter: grayscale(100%);
+    height: 6vh;
+
+    cursor: none;
+
+    transition: 0.3s ease-in-out;   /* adicionar uma transição. */
+}
+
+nav > .nav-mid{
+    width: 30vw;
+    height: 100%;
+
+    gap: 30px;
+
+    display: flex;
+    align-items: center;            /* centralizar os links. */
+    justify-content: center;
+}
+
+nav > .nav-mid > a{
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--cor5);
+
+    padding: 9px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;   /* adicionar uma transição. */
+}
+
+nav > .nav-mid > button{
+    padding: 7px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    color: var(--cor5);
+    font-size: 1em;
+
+    cursor: pointer;
+
+    gap: 5px;
+
+    display: flex;
+    align-items: center;            /* centralizar o icone. */
+    justify-content: center;
+
+    transition: 0.3s ease-in-out;   /* adicionar uma transição. */
+}
+
+#arrow{
+    color: var(--cor5);
+
+    transition: 0.3s ease-in-out;   /* adicionar uma transição. */
+}
+
+nav > button{
+    padding: 7px;
+
+    background-color: var(--cor2);
+    border-radius: 18px;
+    border: none;
+    outline: none;
+
+    color: var(--cor4);
+    font-size: 1em;
+
+    cursor: pointer;
+
+    gap: 5px;
+
+    display: inline-block;
+    align-items: center;            /* centralizar o icone. */
+    justify-content: center;
+
+    transition: 0.3s ease-in-out;   /* adicionar uma transição. */
+}
+
+main {
+    height: auto;                   /* deixar os blocos/caixas que estão dentro da main livres. */
+    width: auto; 
+}
+
+.one-section{
+    height: 90vh;
+
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one-section > article img{
+    height: 40vh;
+}
+
+.one-article-left{
+    margin-right: 7vw;
+}
+
+.one-article-right h1{
+    max-width: 14vw;
+
+    font-size: 1.8em;
+    text-align: justify;
+    color: var(--cor2);
+    
+    margin-bottom: 1vh;
+}
+
+.one-article-right p{
+    font-size: 1em;
+    text-align: justify;
+}
+
+.one-article-right strong{
+    color: var(--cor3);
+}
+
+.one-article-right abbr{
+    text-decoration: none;
+
+    cursor: alias;
+}
+
+#dropdownlist{
+    position: absolute;
+
+    top: 6vh;
+    right: 42vw;
+}
+
+#dropdownlist {
+    display: none;
+}
+
+#dropdownlist a{
+    display: block;
+    
+    border: 1px solid var(--cor3);
+    border-radius: 9px;
+    color: var(--cor5);
+
+    padding: 8px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease-in-out;   /* adicionar uma transição. */
+}
+
+#dropdownlist.ativo{
+    display: block;
+
+    animation: slide 0.3s ease-in-out;
+}

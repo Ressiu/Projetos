@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="/assets/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <title>Site Ressiu | Exercício pessoal</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <img
+        onmouseenter="mouseinimg()"
+        onmouseleave="mouseoutimg()"
+        src="/assets/img/logo.png"
+      />
+      <ion-icon id="refresh" name="reload-outline"></ion-icon>
+      <nav>
+        <ul>
+          <a href="#top">Bem-vindo</a>
+          <a href="#info">Informações</a>
+         <button onclick="drowdownclick()" id="dropdown">
+           Projetos
+              <ion-icon
+                id="icon-dropdown"
+                class="icon-arrom"
+                name="chevron-down-outline"
+              ></ion-icon>
+              <ul id="dropdown-list">
+                <a href="#dashboard">Dashboard</a>
+              </ul>
+           
+         </button>
+        </ul>
+      </nav>
+      <button onclick="contatar()" class="contact">Contato</button>
+    </header>
+    <main>
+      <section id="top" class="section-top">
+        <article><img src="/assets/svg/company.svg" /></article>
+        <aside class="aside-top">
+          <h1>Bem-vindo!</h1>
+          <p>Agora você faz parte do nosso time!</p>
+        </aside>
+      </section>
+      <section id="info" class="section-mid">
+        <article class="article-mid">
+          <h1>
+            O que este site pode fazer ou mostrar?
+            <ion-icon class="icon-arrom" name="chevron-down-outline"></ion-icon>
+          </h1>
+          <ul>
+            <li>Animações legais.</li>
+            <li>Interações criativas.</li>
+            <li>Um design minimalista.</li>
+            <li>Menu com direção inteligente.</li>
+            <li>Paleta de cores agradável.</li>
+            <li>Interagir com o Dashboard fictício</li>
+            <li>Ver um pouco do meu conhecimento.</li>
+            <li>Usar este site como base no meu portifólio.</li>
+          </ul>
+        </article>
+        <aside class="aside-mid">
+          <img src="/assets/svg/telecommunication.svg" />
+        </aside>
+      </section>
+      <section id="dashboard" class="setion-dash">
+        <article class="article-dash">
+          <h1>Dashboard</h1> <span><ion-icon name="diamond-outline"></ion-icon></span>
+        </article>
+        <article class="article-dash-mid">
+          <p>Resumo <span onclick="hiddenNumber()" id="hiddennumbers"><ion-icon name="eye-off-outline"></ion-icon></span></p>
+          <article class="article-container">
+              <div class="saldo-disponivel">
+                <p>Saldo Disponível</p>
+                <h1>R$0,00</h1>
+              </div>
+                 <div class="saldo-pendente">
+                <p>Pendente</p>
+                <h1>R$0,00</h1>
+              </div>
+              <div class="saldo-total">
+                <p>Total</p>
+                <h1>R$0,00</h1>
+              </div>
+              <div class="saldo-saque">
+                <h1><span class="icon-cash"><ion-icon name="receipt-outline"></ion-icon></span>Solicite um saque</h1>
+                <p>Em instantes o dinheiro será liquidado via PIX do seu CNPJ.</p>
+<form action="">
+  
+                  <label for="coin">Insira um valor:</label>
+                  <input onkeyup="showPix()" name="coin" id="valorsaque" type="number" maxlength="1000" minlength="1" required placeholder="ex: 10">
+                  <label id="labelchavepix" for="chavepixname">Insira sua chave pix:</label>
+                  <input id="chavepix" onkeyup="showSubmit()" name="chavepixname" type="text" placeholder="ex: (11)00000-0000" required>
+                  <div class="inline">
+                    <input onclick="alertaSaque()" id="solicitar" class="submit" type="submit" value="Solicitar">
+                    <input type="reset" id="resetar">
+                  </div>
+  
+</form>
+              </div>
+              </div>
+          </article>
+        </article>
+      </section>
+    </main>
+    <script src="/src/javascript/index.js"></script>
+  </body>
+</html>
