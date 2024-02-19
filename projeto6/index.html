@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
+    <link rel="shortcut icon" href="/src/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Project Portfolio #1 | Dev by Ressiu</title>
+</head>
+
+<body onload="carregar()">
+    <div class="load">
+        <div class="load-icon">
+        </div>
+        <div class="load-texto">
+            <p>Loading <span class="um">.</span><span class="dois">.</span><span class="tres">.</span></p>
+        </div>
+    </div>
+    <div class="contentall">
+        <nav>
+            <div class="nav-logo">
+                <img src="src/assets/logo.png">
+            </div>
+            <div class="nav-conteudos">
+                <ul class="nav-links">
+                    <li class="link"><a href="#telainicial">Tela inicial</a></li>
+                    <li class="link"><a href="#caracteristicas">Características</a></li>
+                    <li class="link"><a href="#produtos">Produtos</a></li>
+                    <li class="link"><a onclick="openPopup()" href="#">Comprar</a></li>
+                </ul>
+            </div>
+            <div class="nav-contato"><button onclick="openPopup()" class="btn">Contato</button></div>
+            <div class="nav-mobile">
+                <i onclick="showmenu(this)" class="ri-menu-fold-line"></i>
+            </div>
+            <div id="menu-mobile">
+                <ul id="nav-links-mobile">
+                    <li class="link"><a href="#telainicial">Tela inicial</a></li>
+                    <li class="link"><a href="#caracteristicas">Características</a></li>
+                    <li class="link"><a href="#produtos">Produtos</a></li>
+                    <li class="link"><a onclick="openPopup()" href="#">Comprar</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close"><i class="ri-close-circle-fill"></i></span>
+                <h2>Entrar em contato</h2>
+                <p>Você pode entrar em contato pelo WhatsApp.</p>
+                <div class="footer-popup"><button onclick="irzap(this)" class="btn">WhatsApp</button></div>
+            </div>
+        </div>
+
+        <header id="telainicial" class="container">
+            <div class="content">
+                <h4>CRIE O SITE DOS SEUS SONHOS <i class="ri-sparkling-2-fill"></i></h4>
+                <h1>Olá, eu sou o <span>Ressiu</span>, <abbr title="desenvolvedor web">Web Developer</abbr></h1>
+                <p>Olá! Meu nome é Ressiu e sou um desenvolvedor front-end iniciante com conhecimento básico e mediano
+                    em HTML, CSS e JavaScript. Estou constantemente aprendendo e aprimorando minhas habilidades para
+                    criar experiências web incríveis.
+                    <br><br>
+                    O site atual em que você está navegando é um projeto pessoal que criei para mostrar uma espécie de
+                    vitrine de produtos. Esses produtos são na verdade pacotes de serviços de desenvolvimento, e o site
+                    foi projetado para exibir esses serviços de uma forma única. Em vez de mostrar fotos dos produtos,
+                    optei por usar ícones e textos que descrevem detalhadamente cada serviço oferecido. O resultado é
+                    uma vitrine intuitiva, repleta de interatividade e personalidade.
+                    <br><br>
+                    Estou muito animado com este projeto, pois me permite aplicar e experimentar minhas habilidades de
+                    desenvolvimento web de uma maneira prática e criativa. Espero que você goste de explorar o site
+                    tanto quanto eu gostei de criá-lo!
+                </p>
+                <button onclick="comecar(this)" class="btn">Vamos começar?</button>
+            </div>
+            <div class="image">
+                <img src="src/assets/innovation-animate.svg">
+            </div>
+        </header>
+        <section id="caracteristicas" class="container">
+            <h2 class="header">CARACTERÍSTICAS <i class="ri-box-2-fill"></i></h2>
+            <div class="features">
+                <div class="card">
+                    <span>
+                        <i class="ri-money-dollar-circle-line"></i>
+                    </span>
+                    <h4>Valores</h4>
+                    <p>
+                        Valores acessiveis para todas as classes, claro que dependendo do serviço o preço pode variar,
+                        más é tão simples e barato que os preços já estão setados!
+                    </p>
+                    <a class="arrows" onmouseover="changeLink2(this)" onmouseout="resetLink2(this)"
+                        href="#produtos">Gostou? <i id="icon" class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="card">
+                    <span>
+                        <i class="ri-tools-line"></i>
+                    </span>
+                    <h4>Ferramentas</h4>
+                    <p>
+                        Procuramos sempre usar ferramentas atuais e com qualidade extrema! Nenhum serviço é feito ou
+                        realizado com <i>"gambiarras".</i>
+                    </p>
+                    <a onmouseover="changeLink2(this)" onmouseout="resetLink2(this)" href="#produtos">Gostou? <i
+                            class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="card">
+                    <span>
+                        <i class="ri-customer-service-line"></i>
+                    </span>
+                    <h4>Atendimento</h4>
+                    <p>
+                        Atendimento particular e preciso, sem taxas adicionais por isso, só vamos cobrar taxas caso seja
+                        fechado algum tipo de serviço.
+                    </p>
+                    <a onmouseover="changeLink2(this)" onmouseout="resetLink2(this)" href="#produtos">Gostou? <i
+                            class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="card">
+                    <span>
+                        <i class="ri-user-line"></i>
+                    </span>
+                    <h4>Especialidade</h4>
+                    <p>
+                        Tenho especialidade em <strong><abbr title="hypertext markup language">HTML</abbr>, <abbr
+                                title="cascading style sheets">CSS</abbr></strong> e <strong><abbr
+                                title="java script">JS</abbr></strong> até o momento, inclusive este site foi
+                        desenvolvido usando apenas essas 3 linguagens.
+                    </p>
+                    <a onmouseover="changeLink2(this)" onmouseout="resetLink2(this)" href="#produtos">Gostou? <i
+                            class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="container">
+            <h2 class="header">
+                PRODUTOS E DESCRIÇÃO <i class="ri-box-3-fill"></i>
+            </h2>
+            <div class="prices">
+                <div class="card">
+                    <span>
+                        <i class="ri-vip-diamond-fill"></i>
+                    </span>
+                    <h4>Athena Diamond</h4>
+                    <ul>
+                        <li>Criação de sites personalizados e exclusivos, com design e funcionalidades avançadas.</li>
+                        <li>Suporte prioritário via chat ou telefone.</li>
+                        <li>Até 4 manutenções semanais, com correções de bugs, atualizações e melhorias no site.</li>
+                        <li>Acesso a recursos premium, como integração com plataformas de e-commerce e análise de dados
+                            avançada.</li>
+                    </ul>
+                    <s>R$1100,00</s>
+                    <h3>R$500,00<span class="mes">mês</span></h3>
+                    <a onmouseover="changeLink(this)" onmouseout="resetLink(this)" href="https://wa.me//+5515996607614"
+                        target="_blank">Gostou? <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="card">
+                    <span>
+                        <i class="ri-vip-crown-2-fill"></i>
+                    </span>
+                    <h4>Maximus Goldstein</h4>
+                    <ul>
+                        <li>Criação de sites personalizados com design profissional e funcionalidades avançadas.</li>
+                        <li>Suporte via e-mail ou formulário de contato.</li>
+                        <li>Até 3 manutenções mensais, com correções de bugs e atualizações no site.</li>
+                        <li>Acesso a recursos exclusivos, como formulários de contato avançados e integração com redes
+                            sociais.</li>
+                    </ul>
+                    <s>R$900,00</s>
+                    <h3>R$400,00<span class="mes">mês</span></h3>
+                    <a onmouseover="changeLink(this)" onmouseout="resetLink(this)" href="https://wa.me//+5515996607614"
+                        target="_blank">Gostou? <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="card">
+                    <span>
+                        <i class="ri-vip-crown-2-line"></i>
+                    </span>
+                    <h4>Serena Platinum</h4>
+                    <ul>
+                        <li>Criação de sites personalizados com design elegante e funcionalidades básicas.</li>
+                        <li>Suporte via e-mail.</li>
+                        <li>Até 2 manutenções mensais, com correções de bugs básicos e pequenas atualizações no site.
+                        </li>
+                        <li>Acesso a recursos padrão, como formulários de contato simples e integração com mídias
+                            sociais.</li>
+                    </ul>
+                    <s>R$700,00</s>
+                    <h3>R$300,00<span class="mes">mês</span></h3>
+                    <a onmouseover="changeLink(this)" onmouseout="resetLink(this)" href="https://wa.me//+5515996607614"
+                        target="_blank">Gostou? <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="card">
+                    <span>
+                        <i class="ri-vip-crown-line"></i>
+                    </span>
+                    <h4>Apollo Silverstone</h4>
+                    <ul>
+                        <li>Criação de sites com modelos pré-definidos e funcionalidades básicas.</li>
+                        <li>Suporte básico via e-mail.</li>
+                        <li>1 manutenção mensal, com correções de bugs simples.</li>
+                        <li>Recursos limitados, como formulário de contato básico e integração mínima com mídias
+                            sociais.</li>
+                    </ul>
+                    <s>R$500,00</s>
+                    <h3>R$200,00<span class="mes">mês</span></h3>
+                    <a onmouseover="changeLink(this)" onmouseout="resetLink(this)" href="https://wa.me//+5515996607614"
+                        target="_blank">Gostou? <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </section>
+        <script src="src/index.js"></script>
+</body>
+
+</html>

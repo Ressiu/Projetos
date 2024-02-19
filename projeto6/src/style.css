@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --color-1: #121214;
+    --color-2: #e1e1e6;
+    --color-3: #8234e9;
+    --color-4: #1a1a1e;
+    --color-5: #c4c4cc;
+    --color-6: #202024;
+    --color-7: #111113;
+    --color-8: #1dce9b;
+    --color-9: #202024;
+    --color-10: #c7c7c7;
+    --color-11: #692bb9;
+    --color-12: #6f00ff50;
+    --color-13: #f48f56;
+    --color-14: #ffcd1e;
+    --color-15: #ff4a4a;
+    --color-16: ;
+    --color-17: ;
+    --color-18: ;
+    --color-19: ;
+    --color-20: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav-links i {
+    color: var(--color-10);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-links i:hover {
+    color: var(--color-2);
+}
+
+.link a {
+    color: var(--color-10);
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.link a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-3);
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-12);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+.content > h4 > i,
+.container > h2 > i {
+    color: #692bb9;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    cursor: default;
+}
+
+header .content h4 {
+    color: var(--color-10);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+header .content h1 {
+    color: var(--color-2);
+    font-weight: 600;
+    font-size: 4rem;
+    padding: 2rem 0 2rem 0;
+}
+
+header .content abbr {
+    text-decoration: none;
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--color-2);
+}
+
+header .content p {
+    color: var(--color-10);
+    padding: 0 0 3rem 0;
+    font-size: 1em;
+    text-wrap: wrap;
+}
+
+header .image img {
+    max-width: 600px;
+    margin: auto;
+}
+
+section .header {
+    text-align: center;
+    color: var(--color-2);
+    font-size: 2.25rem;
+    padding: 3rem 0 2rem 0;
+    font-weight: bold;
+    cursor: default;
+}
+
+.features {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.features .card {
+    padding: 2rem;
+    background-color: var(--color-6);
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover {
+    background-color: var(--color-12);
+    border-color: var(--color-11);
+}
+
+.card span {
+    padding: 1rem;
+    border-radius: 6px;
+    color: var(--color-2);
+    background-color: var(--color-3);
+    font-size: 1.3rem;
+}
+
+.card h4 {
+    color: var(--color-2);
+    padding: 2rem 0 2rem 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.card p {
+    color: var(--color-10);
+    font-size: 1em;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    min-width: 200px;
+}
+
+.card abbr {
+    text-decoration: none;
+}
+
+.card a {
+    padding: 1.1rem;
+    background-color: var(--color-4);
+    color: var(--color-10);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    background-color: var(--color-3);
+    color: var(--color-2);
+}
+
+.prices {
+    gap: 2rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.prices .card {
+    padding: 2rem;
+    background-color: var(--color-6);
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+.prices .card s {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: var(--color-15);
+}
+
+span.mes {
+    background-color: transparent;
+    font-size: 0.5em;
+    font-weight: 200;
+    padding: 0 0 0 0.3rem;
+    margin: 0;
+}
+
+.prices .card h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: var(--color-3);
+    padding-bottom: 3rem;
+}
+
+.prices .card:hover {
+    background-color: var(--color-12);
+    border-color: var(--color-3);
+}
+
+.card ul {
+    color: var(--color-10);
+    font-size: 0.9em;
+    font-weight: 200;
+    padding-bottom: 2rem;
+
+    min-width: 200px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* fundo semi-transparente */
+    z-index: 9999;
+    /* garante que o popup esteja sempre acima de outros elementos */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-1);
+    color: var(--color-2);
+    padding: 5rem;
+    border-radius: 9px;
+    cursor: default;
+}
+
+.popup-content h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.popup-content p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.footer-popup {
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.footer-popup button {
+    display: block;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+#menu-mobile.unhidden {
+    display: block;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    width: 50%;
+    height: auto;
+    background-color: var(--color-12);
+    border: 1px solid var(--color-3);
+    border-radius: 9px;
+    padding: 2rem;
+    z-index: 9999;
+
+    transition: all 0.3s ease;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-mobile i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-2);
+    font-size: 1.5em;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.nav-mobile i:hover {
+    color: var(--color-3);
+}
+
+.unhidden {
+    display: block;
+}
+
+#nav-links-mobile {
+    text-align: center;
+    display: none;
+}
+
+#nav-links-mobile.unhidden {
+    display: block;
+}
+
+#nav-links-mobile li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 5rem 0;
+    list-style: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.load {
+    height: 100vh;
+    width: 100vw;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-icon {
+    height: 20px;
+    width: 20px;
+    z-index: 9999;
+    border-radius: 50%;
+    content: '';
+    border: 6px solid var(--color-3);
+    border-top-color: transparent;
+    animation: load 1.5s linear infinite;
+}
+
+.load-texto {
+    padding: 1rem;
+}
+
+.load-texto p {
+    color: var(--color-2);
+    font-weight: 400;
+}
+
+.um {
+    color: var(--color-3);
+
+    animation: loadText 1s 1s linear infinite;
+}
+
+.dois {
+    animation: loadText 1s 1.1s linear infinite;
+}
+
+.tres {
+    animation: loadText 1s 1.2s linear infinite;
+}
+
+@keyframes loadText {
+    0% {
+        color: var(--color-2);
+    }
+
+    50% {
+        color: var(--color-3);
+    }
+
+    100% {
+        color: var(--color-2);
+    }
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.contentall {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .nav-mobile {
+        display: block;
+    }
+
+    .nav-conteudos {
+        display: none;
+    }
+
+    .nav-contato {
+        display: none;
+    }
+
+    .nav-logo img {
+        height: 4rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    header {
+        grid-template-columns: repeat(2, 4fr);
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 4fr);
+    }
+
+    .prices {
+        grid-template-columns: repeat(2, 4fr);
+    }
+}
+
+@media (max-width: 850px) {
+    header {
+        grid-template-columns: repeat(1, 4fr);
+    }
+
+    .features {
+        grid-template-columns: repeat(1, 4fr);
+    }
+
+    .prices {
+        grid-template-columns: repeat(1, 4fr);
+    }
+}
